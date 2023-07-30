@@ -3,7 +3,7 @@ pipeline {
          stages {
                  stage('One') {
                  steps {
-                     echo 'Hi, this is bhagi/Amber from edureka and welcome you to SRE/DevOps 2023 classes'
+                     echo 'Hi, this is bhagi/Amber from edureka and welcome you to SRE/DevOps 2023 classes. Its is going well.'
                  }
                  }
                  stage('Two') {
