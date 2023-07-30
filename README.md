@@ -1,5 +1,26 @@
-# DevOps-June
-This is test repo.
-Start from June.
-May your road to healing be paved and easy to follow.
-Getting well is a journey that takes time and patience.
+pipeline {
+         agent any
+         stages {
+                 stage('One') {
+                 steps {
+                     echo 'Hi, this is bhagi from edureka and welcome you to SRE classes'
+                 }
+                 }
+                 stage('Two') {
+                 steps {
+                    input('Do you want to proceed?')
+                 }
+                 }
+                 stage('Three') {
+                 when {
+                       not {
+                            branch "master"
+                       }
+                 }
+                 steps {
+                       echo "Hello"
+                 }
+                 }
+             
+}
+}
